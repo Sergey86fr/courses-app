@@ -1,0 +1,25 @@
+/* .wrapper {
+
+} */
+
+.header {
+    display: grid;
+    grid-template-columns:auto auto ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.filledRate circle{
+   fill:var(--orange-color)
+}
+
+
+@media (max-width:1200px) {
+
+}

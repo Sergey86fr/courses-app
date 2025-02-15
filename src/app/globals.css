@@ -1,0 +1,41 @@
+:root {
+  /* --font-family: "Noto Sans", serif; */
+  --background-main-color: rgb(229, 229, 229);
+  --background-white-color: rgb(255, 255, 255);
+  --background-secondary-color: rgb(249, 248, 255);
+  --purple-color: rgb(118, 83, 252);
+  --black-color: rgb(59, 67, 78);
+  --light-black-color: rgb(120, 125, 133);
+  --gray-color: rgb(179, 192, 217);
+  --light-gray-color: rgb(226, 226, 226);
+  --green-color: rgb(29, 196, 126);
+  --light-green-color: rgb(200, 248, 228);
+  --orange-color: rgb(252, 131, 109);
+  --red-color: rgb(222, 0, 0);
+  --border-color: rgb(235, 235, 235);
+}
+
+* {
+  /* font-family: var(--font-family); */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  background-color: var(--background-main-color);
+}
+
+.main {
+  display: flex;
+}
+
+

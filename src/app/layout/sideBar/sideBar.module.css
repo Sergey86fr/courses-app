@@ -1,0 +1,90 @@
+ /* .sideBar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px; 
+  /* display: none; */
+  /* background-color: var(--background-main-color); */
+  /* flex-grow: 1; */
+  /* }    */
+
+  /* .sideBar {
+  display: flex;
+  flex-direction: column;
+  } */
+
+.logoTitle {
+  text-align: center;
+  color: var(--purple-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+.itemSideBar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  color: var(--purple-color);
+  cursor: pointer;
+}
+
+.itemTitle {
+  color: var(--black-color);
+}
+
+.active {
+  color: var(--purple-color);
+}
+
+/* .dropDownMenu {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+ } 
+
+ .open {
+  opacity: 1;
+  height: auto;
+} */
+
+.subMenu {
+  border-left: 1px solid var(--light-black-color);
+  margin-left: 10px;
+  /* padding: 10px 0 20px 0; */
+  margin-bottom: 20px;
+}
+
+.subMenuItem {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: var(--light-black-color);
+  cursor: pointer;
+}
+
+.secondLevelMenu {
+  margin: 15px 0;
+}
+
+.secondLevelItem {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--light-black-color);
+}
+
+

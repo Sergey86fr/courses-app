@@ -1,0 +1,10 @@
+.star {
+    margin-right: 5px;
+}
+
+.filled {
+    fill: var(--purple-color);
+}
+.editedStar {
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+/* .footer {
+    width: 100%;
+    position: absolute;
+    background-color: var(--purple-color);
+    padding: 25px;
+    /* flex-shrink: 0; */
+    /* bottom: 0; */
+/* } */ 
+
+.footer {
+    display: grid;
+    grid-template-columns:  1fr auto auto;
+    gap: 40px;
+    background-color: var(--purple-color);
+    color:var(--background-white-color);
+    font-size: 16px;
+    padding: 30px;
+}

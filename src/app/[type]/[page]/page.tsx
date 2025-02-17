@@ -3,7 +3,7 @@ import { MENU_CATEGORY } from "@/app/enum/menu-category.enum";
 import { firstLevelMenu } from "@/app/helper/menu.helper";
 import { IMenuItem } from "@/app/interfaces/menu.interface";
 import { IPage } from "@/app/interfaces/page.interface";
-import { IProductProps } from "@/app/interfaces/product.interface";
+import { IProduct } from "@/app/interfaces/product.interface";
 import axios from "axios";
 import { notFound } from "next/navigation";
 
@@ -67,7 +67,7 @@ export const getMenuItem = async ({ params }: IParams) => {
       `${process.env.NEXT_PUBLIC_API_BASE_URL}top-page/byAlias/${params.page}`
     );
 
-    const { data: products } = await axios.post<IProductProps[]>(
+    const { data: products } = await axios.post<IProduct[]>(
       `${process.env.NEXT_PUBLIC_API_BASE_URL}product/find`,
       { category: pageData.category, limit: 10 }
     );

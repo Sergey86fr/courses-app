@@ -14,6 +14,7 @@ import { Sort } from "../sort/sort";
 import { SORT_VARIANT } from "../sort/sort.enum";
 import { useReducer } from "react";
 import { sortReducer } from "./sort-reducer";
+import { Product } from "../product/product";
 
 export function TopPageComponent({
   firstCategory,
@@ -39,9 +40,9 @@ export function TopPageComponent({
       </div>
       <div>
         {sortedProducts?.map((p) => (
-          <div key={p._id}>{p.title}</div>
+          <Product key={p._id} product={p} />
         ))}
-      </div>
+        </ div>
       <div className={cn(styles.hhTitle)}>
         <HTag tag={H_TAG_VARIANT.h2}>Вакансии - </HTag>
         <Tag

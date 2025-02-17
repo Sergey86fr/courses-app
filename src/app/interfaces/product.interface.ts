@@ -1,4 +1,4 @@
-export interface IProductProps {
+export interface IProduct {
     _id: string
     categories: string[]
     tags: string[]
@@ -11,6 +11,7 @@ export interface IProductProps {
     oldPrice: number
     characteristics: Characteristic[]
     advantages?: string
+    disadvantages?: string
     initialRating: number
     createdAt: string
     updatedAt: string

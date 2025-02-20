@@ -22,7 +22,8 @@ export function Button({
       {children}
       {arrow && (
         <span className={cn(styles.arrow, {
-            [styles.down]: arrow === ARROW_BUTTON_POSITION.DOWN
+            [styles.down]: arrow === ARROW_BUTTON_POSITION.DOWN,
+            [styles.right]: arrow === ARROW_BUTTON_POSITION.RIGHT,
         })}>
             < ArrowIcon />
         </span>

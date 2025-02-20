@@ -7,6 +7,7 @@ export function Card({ children, color, className, ...props }: ICardProps) {
     <div
       className={cn(styles.card, className || "", {
         [styles.secondary]: color === "purple",
+        [styles.primary]: color === "white"
       })}
       {...props}
     >

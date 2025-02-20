@@ -1,0 +1,18 @@
+.review {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.userName {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.desc {
+    grid-column: 1/5;
+}

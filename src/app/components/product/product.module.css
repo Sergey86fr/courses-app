@@ -1,6 +1,6 @@
 .product {
   padding: 30px;
-  margin: 20px 0 50px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns:
     auto
@@ -236,4 +236,19 @@
     margin-bottom: 15px;
    }
 
+}
+
+.reviewWrapper {
+  margin-top: -10px;
+  transition: all .3s ease-in;
+}
+
+.reviewOpened {
+  height: max-content;
+  padding: 30px;
+}
+.reviewClosed {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }

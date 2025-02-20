@@ -5,6 +5,10 @@
   padding: 20px 0 30px;
 }
 
+.primary {
+  background-color: var(--background-white-color);
+}
+
 .secondary {
     background-color: var(--background-secondary-color);
 }

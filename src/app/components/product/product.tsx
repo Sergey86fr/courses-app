@@ -16,6 +16,7 @@ import { declensionWords } from "@/app/helper/declension-words.helper";
 import Image from "next/image";
 import { useState } from "react";
 import { Review } from "../review/review";
+import { ReviewForm } from "../review-form/review-form";
 
 export function Product({ product, className, ...props }: IProductProps) {
     const [isOpenReview, setIsOpenReview] = useState<boolean> (false)
@@ -135,7 +136,8 @@ export function Product({ product, className, ...props }: IProductProps) {
 
           )
           )}
-          
+
+          <ReviewForm productId={product._id} />
       </Card>
       
     </>

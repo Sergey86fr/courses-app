@@ -17,7 +17,6 @@ import { sortReducer } from "./sort-reducer";
 import { Product } from "../product/product";
 
 export function TopPageComponent({
-  firstCategory,
   products,
   page,
 }: ITopPageComponent) {
@@ -54,11 +53,11 @@ export function TopPageComponent({
         </Tag>
       </div>
       <div className={cn(styles.hh)}>
-        <Card>
+        <Card color={"white"}>
           <div className={cn(styles.cardTitle)}>Всего вакансий</div>
           <div className={cn(styles.hhStatCount)}>{page?.hh?.count}</div>
         </Card>
-        <Card className={cn(styles.salary)}>
+        <Card color={"white"} className={cn(styles.salary)}>
           <div>
             <div className={cn(styles.cardTitle)}>Начальный</div>
             <div className={cn(styles.salaryDesc)}>
@@ -71,7 +70,7 @@ export function TopPageComponent({
             </div>
           </div>
         </Card>
-        <Card className={cn(styles.salary)}>
+        <Card color={"white"} className={cn(styles.salary)}>
           <div>
             <div className={cn(styles.cardTitle)}>Средний</div>
             <div className={cn(styles.salaryDesc)}>
@@ -84,7 +83,7 @@ export function TopPageComponent({
             </div>
           </div>
         </Card>
-        <Card className={cn(styles.salary)}>
+        <Card color={"white"} className={cn(styles.salary)}>
           <div>
             <div className={cn(styles.cardTitle)}>Профессионал</div>
             <div className={cn(styles.salaryDesc)}>

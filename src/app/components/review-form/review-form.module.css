@@ -1,0 +1,29 @@
+.reviewForm {
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   align-items: center;
+   gap: 20px 30px;
+   margin-top: 30px;
+}
+
+.desc, .submit {
+    grid-column: 1/4 ;
+    resize: none
+}
+
+.submit {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.title {
+    justify-self: start;
+}
